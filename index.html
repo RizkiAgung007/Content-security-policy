@@ -1,12 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://apis.example.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://images.example.com;">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self' https://apis.example.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://images.example.com;"
+    />
     <title>Website with CSP</title>
-</head>
-<body>
-    <h1>Welcome to a Secure Website</h1>
-</body>
+  </head>
+  <style>
+    body,
+    html {
+      height: 100%;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      width: 50%;
+    }
+
+    .imgProfile {
+      margin-bottom: 20px;
+    }
+
+    .imgProfile .img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    h1 {
+      font-size: 2em;
+      color: #333;
+    }
+
+    p {
+      color: #333;
+      font-weight: 300;
+    }
+  </style>
+
+  <body>
+    <div class="container">
+      <div class="imgProfile">
+        <img src="../09 - Portofolio/img/person.jpg" alt="" class="img" />
+      </div>
+      <h1>Welcome to a Secure Website</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, eius.
+        Ipsa neque, laborum minus itaque est perferendis nesciunt repellat.
+        Soluta rerum qui illo distinctio. Eos consectetur adipisci, vitae
+        temporibus molestias laudantium accusamus deleniti iure. Perferendis
+        delectus iste aliquam quia voluptate pariatur enim, asperiores omnis
+        dicta ab ratione, hic illo eaque.
+      </p>
+    </div>
+  </body>
 </html>
